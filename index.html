@@ -4,73 +4,97 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Starbucks</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <title>Lets Talk</title>
+  <meta name="Lets Talk! Mental health is a big issue especially in teenagers." content="Lets Talk Mentalk Health!">
+  <meta name="Callum Lovekin" content="SitePoint">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-  <!--[if lt IE 9]>
-    <script src ="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
+
   <section id="one" class="full">
-      <div class="logo">
-        <img src="images/starbucks.png" alt="Describe this image">
+    <h4> Mental Health </h4>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded',function(event){
+      // array with texts to type in typewriter
+      var dataText = [ "Lets Talk","Mental Health"];
+
+      // type one text in the typwriter
+      // keeps calling itself until the text is finished
+      function typeWriter(text, i, fnCallback) {
+        // chekc if text isn't finished yet
+        if (i < (text.length)) {
+          // add next character to h1
+         document.querySelector("h4").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+          // wait for a while and call this function again for next character
+          setTimeout(function() {
+            typeWriter(text, i + 1, fnCallback)
+          }, 150);
+        }
+        // text finished, call callback if there is a callback function
+        else if (typeof fnCallback == 'function') {
+          // call callback after timeout
+          setTimeout(fnCallback, 2000);
+        }
+      }
+      // start a typewriter animation for a text in the dataText array
+       function StartTextAnimation(i) {
+         if (typeof dataText[i] == 'undefined'){
+            setTimeout(function() {
+              StartTextAnimation(0);
+            }, 200000);
+         }
+         // check if dataText[i] exists
+        if (i < dataText[i].length) {
+          // text exists! start typewriter animation
+         typeWriter(dataText[i], 0, function(){
+           // after callback (and whole text has been animated), start next text
+           StartTextAnimation(i + 1);
+         });
+        }
+      }
+      // start the text animation
+      StartTextAnimation(0);
+    });
+
+    </script>
     </div>
   </section>
 
   <section class="content">
-    <h1> Starbucks </h1>
-    <h3> The Famous Coffee Shop </h3>
-    <p> Overpriced Coffee Shop From Seattle</p>
+    <h1> Introduction </h1>
+    <h3> Lets Talk Mental Health </h3>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet condimentum odio ac placerat. Proin
-      tempor ante nisl, id elementum quam bibendum sed. Cum sociis natoque penatibus et magnis dis parturient montes,
-       nascetur ridiculus mus. Morbi ultrices, libero eu blandit accumsan, eros justo ultricies dui, ut hendrerit dui
-       erat sit amet odio. Duis consequat turpis in erat posuere accumsan. Nulla at erat turpis. Phasellus venenatis
-       felis sed sapien dictum, et bibendum est mollis. Nulla a venenatis ligula, sed tempus urna. Nam molestie turpis
-        at erat rhoncus dictum. Praesent sodales arcu et lacinia finibus. Phasellus lobortis purus nec massa viverra, eu
-        porttitor tellus maximus. Sed sem arcu, porta vel sem nec, elementum scelerisque diam. Sed vulputate eget neque non
-        euismod.</p>
+    <p>My name is Callum Lovekin and I am University student currently studying Web Media at Ravensbourne. The site you are currently
+    on was developed and created by my own two hands, its soul purpose is to raise awareness of teenage mental Health and the steps
+    you can take if you are going through a hard time or someone you know is. I will also be sharing my own story and what I have
+    been going through in the past years. Resources are free and avaliable at the bottom of the site
+    so feel free to use them for advice!</p>
+
   </section>
 
   <section id="two" class="full"></section>
 
-    <section id="three" class="full"></section>
+  <section id="three" class="full"></section>
 
-      <section id="four" class="full"></section>
-
+  <section id="four" class="full"></section>
 
   <section id="five" class="full">
-    <div id="mc_embed_signup">
-  <form action="//twitter.us12.list-manage.com/subscribe/post?u=43efbdeecd252c30b1ead06d0&amp;id=ab4c4ec792" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-          <div class="mc-field-group">
-              <label for="mce-EMAIL">Email Address </label>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-          </div>
-          <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_43efbdeecd252c30b1ead06d0_ab4c4ec792" tabindex="-1" value="">
-      </div>
-      <div class="clear">
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-      </div>
+    <div class="container">
+    <div class="avatar-flip">
+      <img id="profile" src="images/profile.jpg" height="150" width="150">
+        </div>
+      <h2>Callum Lovekin</h2>
+      <h3>University Student</h4>
+      <p>18 and currently studying Web Media at Ravensbourne university in London! Hope you enjoy my work any feedback is apreciated.</p>
+      <p>Connec dolore ipsum faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
     </div>
-  </form>
-  </div>
-</section>
+   </section>
 
-
-  <script src="js/scripts.js"></script>
 </body>
+
 </html>

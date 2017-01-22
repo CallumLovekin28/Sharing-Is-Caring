@@ -1,93 +1,93 @@
-html, body
-{
+/*** Global ***/
+
+html, body{
     height: 100%;
+    background-color: #373B44;
 }
 
-.content
-{
+.content {
     margin: 2em auto;
     max-width: 40em;
+    width: 100%;
     padding: 0 1em;
+    font-family: 'HelveticaNeue';
+    color: white;
+    font-weight: 500;
 }
 
-.full
-{
+.full {
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 
-.logo
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 320px;
-    height: 320px;
-    margin-left: -160px;
-    margin-top: -160px;
+/*** Animation ***/
+
+span {
+  border-right: .03em solid;
+  margin-left: 5px;
+  animation: caret 1s steps(1) infinite;
 }
 
-.logo img
-{
-    width: 100%;
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 
-#one
-{
-  background-image: url("../images/1.jpg");
+/*** Sections ***/
+
+#one {
+  background-color: #FE4B74;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font-family: 'HelveticaNeue';
+  color: white;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#two
-{
-  background-image: url("../images/2.jpg");
+#two {
+  /*background-image: url("../images/2.jpg");*/
+  background-color: #FE4B74;
 }
 
-#three
-{
+#three {
   background-image: url("../images/3.jpg");
 }
 
-#four
-{
+#four {
   background-image: url("../images/4.jpg");
 }
 
-#five
-{
-  background-image: url("../images/5.jpg");
-}
-#mc_embed_signup
-{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 30em;
-	height: 13em;
-	margin: -6.5em 0 0 -15em;
-
-	background: #056f30;
+#five {
+  background-color: #373B44;
+  height: 60%;
 }
 
-input
-{
-	box-sizing: border-box;
-	width: 100%;
+/*** Profile ***/
+
+.container {
+  width: 400px;
+  margin: 120px auto 120px;
+  background-color: #FE4B74;
+  padding: 0 20px 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  text-align: center;
+  color: white;
 }
 
-input[type="email"]
-{
-	padding: .5em;
-}
-
-input[type="submit"]
-{
-	margin: 1em 0;
-	background-color: black;
-	color: #056f30;
-	border-radius: .25em;
-	border: none;
-	padding: .5em;
-	/*font-size: 1.5em;*/
+img {
+  border-radius: 10%;
+  margin-top: 30px;
+  width: auto;
 }
