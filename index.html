@@ -5,96 +5,74 @@
   <meta charset="utf-8">
 
   <title>Lets Talk</title>
-  <meta name="Lets Talk! Mental health is a big issue especially in teenagers." content="Lets Talk Mentalk Health!">
+  <meta name="Lets Talk! Mental health is a big issue especially in teenagers." content="Lets Talk Mental Health!">
   <meta name="Callum Lovekin" content="SitePoint">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/animate.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400" rel="stylesheet">
 </head>
 
 <body>
 
-  <section id="one" class="full">
-    <h4> Mental Health </h4>
-    <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded',function(event){
-      // array with texts to type in typewriter
-      var dataText = [ "Lets Talk","Mental Health"];
-
-      // type one text in the typwriter
-      // keeps calling itself until the text is finished
-      function typeWriter(text, i, fnCallback) {
-        // chekc if text isn't finished yet
-        if (i < (text.length)) {
-          // add next character to h1
-         document.querySelector("h4").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-
-          // wait for a while and call this function again for next character
-          setTimeout(function() {
-            typeWriter(text, i + 1, fnCallback)
-          }, 150);
-        }
-        // text finished, call callback if there is a callback function
-        else if (typeof fnCallback == 'function') {
-          // call callback after timeout
-          setTimeout(fnCallback, 2000);
-        }
-      }
-      // start a typewriter animation for a text in the dataText array
-       function StartTextAnimation(i) {
-         if (typeof dataText[i] == 'undefined'){
-            setTimeout(function() {
-              StartTextAnimation(0);
-            }, 200000);
-         }
-         // check if dataText[i] exists
-        if (i < dataText[i].length) {
-          // text exists! start typewriter animation
-         typeWriter(dataText[i], 0, function(){
-           // after callback (and whole text has been animated), start next text
-           StartTextAnimation(i + 1);
-         });
-        }
-      }
-      // start the text animation
-      StartTextAnimation(0);
-    });
-
-    </script>
-    </div>
+  <section id="one" class="section">
+    <!--<h2>Lets Talk_ <br> Mental Health_<br><p id='subtitle'><i> scroll down </i></p></h2> -->
+    <div class="glitch" data-text="Mental Health">Mental Health</div>
   </section>
 
-  <section class="content">
-    <h1> Introduction </h1>
-    <h3> Lets Talk Mental Health </h3>
-
-    <p>My name is Callum Lovekin and I am University student currently studying Web Media at Ravensbourne. The site you are currently
-    on was developed and created by my own two hands, its soul purpose is to raise awareness of teenage mental Health and the steps
-    you can take if you are going through a hard time or someone you know is. I will also be sharing my own story and what I have
-    been going through in the past years. Resources are free and avaliable at the bottom of the site
-    so feel free to use them for advice!</p>
-
+  <section id="two" class="full" class="section">
+      <h2 id="define-before"> So define <mark>mental health.</mark> </h2>
+        <div id="define" class="hvr-grow">
+          <h3> <mark>Mental Health</mark> <br> n.<br><p>
+            <blockquote><i><strong>a. </strong> Psychological well-being and satisfactory adjustment to society and to the ordinary demands of life.<br>
+            <strong>b. </strong>  A person's overall emotional and psychological condition</i></p></blockquote>
+          </div>
   </section>
 
-  <section id="two" class="full"></section>
+  <section id="three" class="full" class="section">
+      <h1>Teenage <mark>Mental Health</mark> Facts</h1>
 
-  <section id="three" class="full"></section>
-
-  <section id="four" class="full"></section>
-
-  <section id="five" class="full">
-    <div class="container">
-    <div class="avatar-flip">
-      <img id="profile" src="images/profile.jpg" height="150" width="150">
-        </div>
-      <h2>Callum Lovekin</h2>
-      <h3>University Student</h4>
-      <p>18 and currently studying Web Media at Ravensbourne university in London! Hope you enjoy my work any feedback is apreciated.</p>
-      <p>Connec dolore ipsum faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <div class="content-slider">
+      <div class="slider">
+        <div class="mask">
+          <ul>
+            <li class="anim1">
+              <div class="quote">1 in 10 children and young people aged 5 - 16 suffer from a diagnosable <mark>mental health</mark> disorder.</div>
+              <div class="source">- Young Minds </div>
+            </li>
+          <li class="anim2">
+            <div class="quote">Between 1 in every 12 and 1 in 15 children and young people deliberately <mark> self-harm.</mark></div>
+            <div class="source">- Young Minds </div>
+          </li>
+          <li class="anim3">
+            <div class="quote">Nearly 80,000 children and young people suffer from <mark>severe depression.</mark></div>
+            <div class="source">- Young Minds </div>
+          </li>
+          <li class="anim4">
+            <div class="quote">The number of young people aged 15-16 with <mark>depression</mark> nearly doubled between the 1980s and the 2000s.</div>
+            <div class="source">- Young Minds </div>
+          </li>
+          <li class="anim5">
+            <div class="quote">3.3% or about 290,000 children and young people have an <mark>anxiety</mark> disorder.</div>
+            <div class="source">- Young Minds </div>
+          </li>
+        </ul>
+      </div>
     </div>
-   </section>
+  </div> </section>
+
+  <section id="four" class="full" class="section"></section>
+
+  <section id="five" class="full" class="section"> </section>
 
 </body>
 
 </html>
+
+
+<!-- <p>My name is Callum Lovekin and I am University student currently studying Web Media at Ravensbourne. The site you are currently
+on was developed and created by my own two hands, its soul purpose is to raise awareness of teenage mental Health and the steps
+you can take if you are going through a hard time or someone you know is. I will also be sharing my own story and what I have
+been going through in the past years. Resources are free and avaliable at the bottom of the site
+so feel free to use them for advice!</p> -->
