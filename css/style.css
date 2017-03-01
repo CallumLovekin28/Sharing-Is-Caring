@@ -48,6 +48,15 @@ h1, h3, h4 {
   text-align: left;
 }
 
+iframe {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 80px;
+  margin: center;
+  padding-top: 120px;
+}
+
 
 /*** Sections ***/
 
