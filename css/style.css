@@ -19,6 +19,8 @@ html, body{
     color: black;
     font-family: 'Roboto Slab', serif;
     padding-top: 3em;
+    display: flex;
+    align-items: center;
 }
 
 .full {
@@ -43,7 +45,7 @@ h1, h3, h4 {
 }
 
 #name {
-  padding-top: 10px;
+  padding-top: 175px;
   display: flex;
   text-align: left;
 }
@@ -53,10 +55,19 @@ iframe {
   justify-content: center;
   align-self: center;
   padding: 80px;
-  margin: center;
   padding-top: 120px;
 }
 
+#text {
+  text-align: center;
+}
+
+#image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
 
 /*** Sections ***/
 
@@ -100,12 +111,12 @@ iframe {
   height: 100vh;
   color: black;
   text-align: center;
-
 }
 
 #four {
   height: 100vh;
   width: 100%;
+
 }
 
 #five {
@@ -324,8 +335,24 @@ h2 {
 ul,li {
 font-family: 'Roboto Slab', serif;
 font-weight: 100;
-padding-top: 20px;
+width: 100%;
 font-size: 15px;
 display: flex;
 justify-content: center;
+
+}
+
+#facts
+{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  padding-top: 175px;
+  position: relative;
+  text-align: center;
+
+}
+
+#youngminds {
+  text-align: center;
+  padding-top: 30px;
 }
